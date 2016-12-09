@@ -10,6 +10,12 @@ from urllib.parse import urlencode
 from http.cookiejar import CookieJar
 
 class UKPostbox(object):
+    """
+    Thinking of Signing up? Please use my referral URL:
+
+        https://client.ipostalmail.net/About?Referrer=773f41c4fa4b4661bb8052955b34a261
+    """
+
     re_pdf = re.compile(r'\?t=(?P<filename>[^\.]+)\.pdf')
 
     def __init__(self):
